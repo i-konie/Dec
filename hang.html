@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>行标签</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+</head>
+<body>
+<!-- 行标签特性：
+    1 不能设置宽高 (img除外)
+    2 宽高由内容决定
+    3 换行会产生空格 -->
+    <span style="background-color:skyblue;">我是span</span><span style="background-color:skyblue;">我是span</span>
+    <!-- 作为容器 -->
+    <span style="background-color:skyblue;">我是span</span>
+    <span style="background-color:skyblue;">我是span</span>
+    <!-- 图片无法导入时，声明图片 -->
+    <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="I'm photo.." />
+    <!-- a标签，超链接，锚点定位 -->
+    <a href="kuai.html">diudiui</a>
+    <a href="../../img/01xinxi.jpg">tu</a>
+    <var>我是斜体</var>
+    <em>我是斜体2</em>
+    <strong>我是加粗</strong>
+
+    <form action="" method="">
+    <!-- label跟表单元素input进行绑定（for属性）：点击label任意位置，焦点自动转移到相应表单控件上 -->
+        <p>
+            <label for="e">
+                <span>email：</span>
+                <!-- 提交表单内容需要设name属性 -->
+                <input type="text" name="email" id="e" />
+            </label>
+        </p>
+        <p>
+            <label for="d">
+                <span>possword：</span>
+                <!-- 提交表单内容需要设name属性 -->
+                <input type="password" name="possword" id="d" />
+            </label>
+        </p>
+        <!--  radio:单选 (去掉name属性可以多选）
+              checkbox:双选
+              (name一致) -->
+        <p>
+            <label for="f">
+                <span>sex：</span>
+                <input type="checkbox" name="sex" id="f" value="male" />male
+            </label>
+        </p>
+        <p>
+            <label for="g">
+                <input type="checkbox" name="sex" id="g" value="female" />female
+            </label>
+        </p>
+        <p>
+            <label for="">
+                <span>sex：</span>
+                <input type="radio" name="sex" value="male" />male
+            </label>
+        </p>
+        <p>
+            <label for="">
+                <input type="radio" name="sex" value="female" />female
+            </label>
+            </p>
+        <p><input type="button" value="btn" /></p>
+        <p><input type="submit" value="yes" /></p>
+        <!-- 重置所有 -->
+        <p><input type="reset" value="reset" /></p>
+        <!--  默认提交 -->
+        <p><input type="hidden" value="" name="" /></p>
+        <!-- 上传文件 -->
+        <input type="file" />
+        <!-- select下拉列表，option列表元素-->
+        <h3>choose</h3>
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">12</option>
+            <option value="">123</option>
+            <option value="">1234</option>
+        </select>
+        <!-- 多行文本：cols:列 rows:行 ，可设置宽高 -->
+        <textarea name="" id="" cols="100" rows="5" ></textarea>
+    </form>
+</body>
+</html>
